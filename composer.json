@@ -1,0 +1,11 @@
+{
+    "require": {
+        "beberlei/assert": "@stable"
+    },
+
+    "autoload": {
+        "psr-0": {
+            "srsbsns\\": "src/"
+        }
+    }
+}
