@@ -23,7 +23,12 @@ $streamers = [
                 'strifetalk',
             ];
 
+//setup password so you only generate when pw is given
+$password = "Your Password Here";
 
+if ($password != $_GET['password']) {
+    die('incorrect password');
+}
 ////////////////////////////////////
 
 //start App
