@@ -8,8 +8,7 @@ This script Saves the info from multiple users of twitch locally.in a Json Array
 This way the results can be accessed directly.
 
 
-o Tip cronjob this script every 5 minutes to check which users are online on twitch.
-
+- Tip cronjob this script every 5 minutes to check which users are online on twitch.
 
 #Usage 
 ~~~
