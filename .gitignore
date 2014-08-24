@@ -1,2 +1,3 @@
-Saves
-Vendor
+Saves/*.json
+vendor
+composer.lock
