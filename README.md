@@ -12,5 +12,5 @@ Tip cronjob this script every 5 minutes to check which users are online on twitc
 use composer to install dependencies.
 
 Chmod save folder 777
-with your browser call generate.php
+with your browser call generate.php?password=Your Password Here
 ~~~
