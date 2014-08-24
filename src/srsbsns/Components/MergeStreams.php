@@ -17,7 +17,7 @@ class MergeStreams
     {
         $streamerData = array();
         foreach ($streamers as $streamer) {
-            $streamerData[$streamer] = [$this->feedToArray->create($url.$streamer)];
+            $streamerData[$streamer] = $this->feedToArray->create($url.$streamer);
         }
         return $streamerData;
     }
