@@ -20,4 +20,4 @@ class TwitterRepository extends Repository {
 
     }
 
-} 
+}
