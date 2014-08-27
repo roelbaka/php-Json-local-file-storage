@@ -27,6 +27,10 @@ $arrayFeed = new FeedToArray();
 //Get Data for all streamers in streamers Array and merge them to 1 array
 $redditFeed = $arrayFeed->create($redditApiUrl);
 
+if($redditFeed->error == "404") {
+    die("wrong stream url or twitch down");
+}
+
 //save data to Json File
 $streamRepository = new StreamRepository();
 $streamRepository->save('RedditFeed', $redditFeed);
