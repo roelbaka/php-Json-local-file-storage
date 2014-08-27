@@ -25,7 +25,7 @@ $streamers = [
 //start App
 use srsbsns\Components\FeedReader\FeedToArray;
 use srsbsns\Components\Twitch\MergeStreams;
-use srsbsns\Components\StreamRepository;
+use srsbsns\Components\JsonRepository;
 
 $mergeStreams = new MergeStreams(new FeedToArray());
 
@@ -33,5 +33,5 @@ $mergeStreams = new MergeStreams(new FeedToArray());
 $streamers = $mergeStreams->merge($twitchApiUrl, $streamers);
 
 //save data to Json File
-$streamRepository = new StreamRepository();
-$streamRepository->save('TwitchStreamers', $streamers);
+$jsonRepository = new JsonRepository();
+$jsonRepository->save('TwitchStreamers', $streamers);
