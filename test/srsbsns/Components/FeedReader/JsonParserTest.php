@@ -26,4 +26,23 @@ class JsonParserTest extends TestCase
 
         $this->assertEquals($expectedResult, $result);
     }
+
+    /**
+     * @test
+     *  @expectedException InvalidArgumentException
+     */
+    public function it_should_not_return_no_json()
+    {
+        $jsonvar = 'je moeder';
+        $result = $this->jsonParser->parse($jsonvar);
+    }
+    /**
+     * @test
+     * @expectedException InvalidArgumentException
+     */
+    public function it_should_not_return_empty_json()
+    {
+        $jsonvar = "{[]}";
+        $result = $this->jsonParser->parse($jsonvar);
+    }
 }
