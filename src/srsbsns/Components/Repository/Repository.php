@@ -14,7 +14,7 @@ class Repository
     }
 
     public function save($filePath, $fileName, $contents){
-        $file = new File(RESOURCEPATH.$filePath, $fileName, $contents);
+        $file = new File($filePath, $fileName, $contents);
         $this->save->save($file);
     }
 

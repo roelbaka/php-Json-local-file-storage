@@ -9,7 +9,7 @@ class StreamRepository extends Repository
 {
     public function save ($fileName, $data) 
     {
-        parent::save('', $fileName, $data);
+        parent::save(RESOURCEPATH, $fileName, $data);
     }
 
     public function load($fileName)
