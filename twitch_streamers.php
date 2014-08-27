@@ -3,10 +3,6 @@
 //Config
 /////////////////////////
 
-define("RESOURCEPATH", "Saves/");
-
-//include autoload
-require("vendor/autoload.php");
 //include config
 require('config.php');
 
