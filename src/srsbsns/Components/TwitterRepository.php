@@ -1,20 +1,15 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: rory
- * Date: 27-08-14
- * Time: 21:47
- */
 
 namespace srsbsns\Components;
 
-
 use srsbsns\Components\Repository\Repository;
+use srsbsns\Components\Repository\File;
 
 class TwitterRepository extends Repository {
 
-    public function save($filePath, $fileName, $contents) {
-        parent::save($filePath, $fileName, $contents);
+    public function save($fileName, $data) {
+        $file = new File(RESOURCEPATH, $fileName, $data);
+        parent::write($file);
 
         // @TODO Twitter logic here
 
