@@ -3,10 +3,6 @@
 //Config
 /////////////////////////
 
-define("RESOURCEPATH", "Saves/");
-
-//include autoload
-require("vendor/autoload.php");
 //include config
 require('config.php');
 
@@ -21,22 +17,14 @@ $streamers = [
                 'mfsplash',
                 'mantequillas',
                 'srsbsnstv',
-                'SeriousDubs',
                 'strifetalk',
             ];
-
-//setup password so you only generate when pw is given
-$password = "strifedikzak1337";
-
-if ($password != $_GET['password']) {
-    die('incorrect password');
-}
 ////////////////////////////////////
 
 //start App
 use srsbsns\Components\FeedReader\FeedToArray;
-use srsbsns\Components\MergeStreams;
-use srsbsns\Components\StreamRepository;
+use srsbsns\Components\Twitch\MergeStreams;
+use srsbsns\Components\JsonRepository;
 
 $mergeStreams = new MergeStreams(new FeedToArray());
 
@@ -44,5 +32,5 @@ $mergeStreams = new MergeStreams(new FeedToArray());
 $streamers = $mergeStreams->merge($twitchApiUrl, $streamers);
 
 //save data to Json File
-$streamRepository = new StreamRepository();
-$streamRepository->save('TwitchStreamers', $streamers);
+$jsonRepository = new JsonRepository();
+$jsonRepository->save('TwitchStreamers', $streamers);

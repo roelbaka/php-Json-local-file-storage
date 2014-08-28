@@ -1,6 +1,6 @@
 <?php
 
-namespace srsbsns\Components;
+namespace srsbsns\Components\Twitch;
 
 use srsbsns\Components\FeedReader\FeedToArray;
 

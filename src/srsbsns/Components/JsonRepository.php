@@ -5,11 +5,12 @@ namespace srsbsns\Components;
 use srsbsns\Components\Repository\Repository;
 use srsbsns\Components\Repository\File;
 
-class StreamRepository extends Repository
+class JsonRepository extends Repository
 {
     public function save ($fileName, $data) 
     {
-        parent::save('', $fileName, $data);
+        $file = new File(RESOURCEPATH, $fileName, $data);
+        parent::save($file);
     }
 
     public function load($fileName)
