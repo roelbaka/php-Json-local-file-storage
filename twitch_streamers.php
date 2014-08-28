@@ -17,7 +17,6 @@ $streamers = [
                 'mfsplash',
                 'mantequillas',
                 'srsbsnstv',
-                'SeriousDubs',
                 'strifetalk',
             ];
 ////////////////////////////////////
