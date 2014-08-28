@@ -9,7 +9,8 @@ class JsonRepository extends Repository
 {
     public function save ($fileName, $data) 
     {
-        parent::save(RESOURCEPATH, $fileName, $data);
+        $file = new File(RESOURCEPATH, $fileName, $data);
+        parent::save($file);
     }
 
     public function load($fileName)

@@ -13,8 +13,7 @@ class Repository
         $this->load = new Load();
     }
 
-    public function save($filePath, $fileName, $contents){
-        $file = new File($filePath, $fileName, $contents);
+    public function save($file){
         $this->save->save($file);
     }
 
