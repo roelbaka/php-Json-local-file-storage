@@ -2,7 +2,7 @@
 
 namespace srsbsns\Components\Repository;
 
-class Repository
+abstract class Repository
 {
     private $save;
     private $load;
@@ -13,7 +13,9 @@ class Repository
         $this->load = new Load();
     }
 
-    public function save(File $file){
+    abstract function save($fileName, $data);
+
+    public function write(File $file){
         $this->save->save($file);
     }
 
