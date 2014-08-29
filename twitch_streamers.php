@@ -11,13 +11,15 @@ $twitchApiUrl = "https://api.twitch.tv/kraken/streams/";
 
 //streamers twitchTV usernames
 $streamers = [
-                'splcast',
                 'leeleethebunny',
                 'ryzentv',
                 'mfsplash',
-                'mantequillas',
+                'mantequillasplay',
+                'smallung',
                 'srsbsnstv',
                 'strifetalk',
+                'rashaku',
+                'jetbatsy'
             ];
 ////////////////////////////////////
 
