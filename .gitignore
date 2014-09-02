@@ -1,3 +1,4 @@
 Saves/*.json
 vendor
 composer.lock
+.idea
