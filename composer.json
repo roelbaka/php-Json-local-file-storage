@@ -3,7 +3,7 @@
     "type":"library",
     "require": {
         "beberlei/assert": "@stable",
-		"j7mbo/twitter-api-php": "dev-master"
+        "j7mbo/twitter-api-php": "dev-master"
     },
 
     "autoload": {

@@ -1,9 +1,6 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: rory
- * Date: 31-08-14
- * Time: 17:02
+ * Twitter authentication object
  */
 
 namespace srsbsns\Components\Twitter;
