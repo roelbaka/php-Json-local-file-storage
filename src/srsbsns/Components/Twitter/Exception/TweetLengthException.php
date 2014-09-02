@@ -8,7 +8,6 @@
 
 namespace srsbsns\Components\Twitter\Exception;
 
-
-class TweetLengthException {
+class TweetLengthException extends \Exception {
 
 } 

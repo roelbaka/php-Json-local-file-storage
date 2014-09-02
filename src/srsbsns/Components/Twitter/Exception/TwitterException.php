@@ -9,6 +9,6 @@
 namespace srsbsns\Components\Twitter\Exception;
 
 
-class TwitterException {
+class TwitterException extends \Exception {
 
 } 

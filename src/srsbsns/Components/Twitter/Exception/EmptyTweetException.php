@@ -1,7 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: rory
- * Date: 02-09-14
- * Time: 20:23
- */ 
+
+namespace srsbsns\Components\Twitter\Exception;
+
+class EmptyTweetException extends \Exception {
+
+}

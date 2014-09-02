@@ -1,6 +1,9 @@
 {
+    "name": "roelbaka/php-Json-local-file-storage",
+    "type":"library",
     "require": {
-        "beberlei/assert": "@stable"
+        "beberlei/assert": "@stable",
+		"j7mbo/twitter-api-php": "dev-master"
     },
 
     "autoload": {
